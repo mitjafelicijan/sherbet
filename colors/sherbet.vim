@@ -48,7 +48,7 @@ hi! link debugPC CursorLine
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   let g:terminal_ansi_colors = ['#000000', '#d75f5f', '#87d75f', '#d7af5f', '#87afd7', '#af87d7', '#5fafaf', '#dadada', '#707070', '#ff5f5f', '#87ff5f', '#ffd75f', '#87d7ff', '#d787ff', '#5fd7d7', '#ffffff']
 endif
-hi Normal guifg=#dadada guibg=#161821 gui=NONE cterm=NONE
+hi Normal guifg=None guibg=None gui=NONE cterm=NONE
 hi Added guifg=#87d75f guibg=NONE gui=NONE cterm=NONE
 hi Changed guifg=#87afd7 guibg=NONE gui=NONE cterm=NONE
 hi Removed guifg=#d75f5f guibg=NONE gui=NONE cterm=NONE
@@ -121,7 +121,7 @@ hi ToolbarButton guifg=#dadada guibg=#000000 gui=bold cterm=bold
 hi debugBreakpoint guifg=#8787af guibg=#000000 gui=bold,reverse cterm=bold,reverse
 
 if s:t_Co >= 256
-  hi Normal ctermfg=253 ctermbg=233 cterm=NONE
+  hi Normal ctermfg=253 ctermbg=NONE cterm=NONE
   hi Added ctermfg=113 ctermbg=NONE cterm=NONE
   hi Changed ctermfg=110 ctermbg=NONE cterm=NONE
   hi Removed ctermfg=167 ctermbg=NONE cterm=NONE
@@ -130,7 +130,7 @@ if s:t_Co >= 256
   hi CurSearch ctermfg=207 ctermbg=16 cterm=reverse
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE
-  hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
+  hi CursorLine ctermfg=NONE ctermbg=233 cterm=NONE
   hi CursorLineNr ctermfg=189 ctermbg=237 cterm=NONE
   hi DiffAdd ctermfg=35 ctermbg=16 cterm=reverse
   hi DiffChange ctermfg=111 ctermbg=16 cterm=reverse
@@ -165,8 +165,8 @@ if s:t_Co >= 256
   hi SpellCap ctermfg=110 ctermbg=NONE cterm=underline
   hi SpellLocal ctermfg=140 ctermbg=NONE cterm=underline
   hi SpellRare ctermfg=73 ctermbg=NONE cterm=underline
-  hi StatusLine ctermfg=16 ctermbg=189 cterm=bold
-  hi StatusLineNC ctermfg=103 ctermbg=16 cterm=reverse
+  hi StatusLine ctermfg=245 ctermbg=235 cterm=bold
+  hi StatusLineNC ctermfg=245 ctermbg=NONE cterm=reverse
   hi TabLine ctermfg=103 ctermbg=16 cterm=reverse
   hi TabLineFill ctermfg=253 ctermbg=NONE cterm=NONE
   hi TabLineSel ctermfg=16 ctermbg=189 cterm=bold
@@ -415,13 +415,6 @@ if s:t_Co >= 0
   unlet s:t_Co
   finish
 endif
-
-" This overrides some of the sorbet settings.
-hi Normal guibg=NONE ctermbg=NONE
-hi StatusLine ctermfg=245 ctermbg=235 cterm=none
-hi StatusLineNC ctermfg=245 ctermbg=none cterm=none
-hi CursorLine cterm=none ctermbg=233 ctermfg=none
-" End of overrides.
 
 " Background: dark
 " Color: guibg         #161821           233               black

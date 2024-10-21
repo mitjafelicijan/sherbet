@@ -48,7 +48,7 @@ hi! link debugPC CursorLine
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   let g:terminal_ansi_colors = ['#000000', '#d75f5f', '#87d75f', '#d7af5f', '#87afd7', '#af87d7', '#5fafaf', '#dadada', '#707070', '#ff5f5f', '#87ff5f', '#ffd75f', '#87d7ff', '#d787ff', '#5fd7d7', '#ffffff']
 endif
-hi Normal guifg=None guibg=None gui=NONE cterm=NONE
+hi Normal guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Added guifg=#87d75f guibg=NONE gui=NONE cterm=NONE
 hi Changed guifg=#87afd7 guibg=NONE gui=NONE cterm=NONE
 hi Removed guifg=#d75f5f guibg=NONE gui=NONE cterm=NONE

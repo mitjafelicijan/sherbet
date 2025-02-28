@@ -71,7 +71,7 @@ hi IncSearch guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
 hi LineNr guifg=#5f5f87 guibg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
 " hi ModeMsg guifg=#dadada guibg=NONE gui=bold cterm=bold
-hi ModeMsg ctermbg=214 ctermfg=16 guibg=orange guifg=black
+hi ModeMsg ctermbg=120 ctermfg=16 guibg=orange guifg=black
 hi MoreMsg guifg=#dadada guibg=NONE gui=NONE cterm=NONE
 hi NonText guifg=#707070 guibg=NONE gui=NONE cterm=NONE
 hi Pmenu guifg=#000000 guibg=#a6a8b1 gui=NONE cterm=NONE

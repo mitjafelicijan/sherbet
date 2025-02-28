@@ -456,3 +456,5 @@ endif
 " Term colors: dark0 dark1 dark2 dark3 dark4 dark5 dark6 dark7
 " Term colors: dark8 dark9 dark10 dark11 dark12 dark13 dark14 dark15
 " vim: et ts=8 sw=2 sts=2
+"
+highlight ModeMsg ctermbg=214 ctermfg=16 guibg=orange guifg=black

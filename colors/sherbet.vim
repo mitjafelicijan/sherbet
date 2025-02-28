@@ -70,7 +70,8 @@ hi Folded guifg=#5f5f87 guibg=#161821 gui=NONE cterm=NONE
 hi IncSearch guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
 hi LineNr guifg=#5f5f87 guibg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
-hi ModeMsg guifg=#dadada guibg=NONE gui=bold cterm=bold
+" hi ModeMsg guifg=#dadada guibg=NONE gui=bold cterm=bold
+hi ModeMsg ctermbg=214 ctermfg=16 guibg=orange guifg=black
 hi MoreMsg guifg=#dadada guibg=NONE gui=NONE cterm=NONE
 hi NonText guifg=#707070 guibg=NONE gui=NONE cterm=NONE
 hi Pmenu guifg=#000000 guibg=#a6a8b1 gui=NONE cterm=NONE
@@ -143,7 +144,7 @@ if s:t_Co >= 256
   hi IncSearch ctermfg=214 ctermbg=16 cterm=reverse
   hi LineNr ctermfg=60 ctermbg=NONE cterm=NONE
   hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
-  hi ModeMsg ctermfg=253 ctermbg=NONE cterm=bold
+  " hi ModeMsg ctermfg=253 ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=253 ctermbg=NONE cterm=NONE
   hi NonText ctermfg=242 ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=16 ctermbg=248 cterm=NONE
@@ -226,7 +227,7 @@ if s:t_Co >= 16
   hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
-  hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
+  " hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuMatch ctermfg=NONE ctermbg=darkred cterm=reverse
@@ -302,7 +303,7 @@ if s:t_Co >= 8
   hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
-  hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
+  " hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuMatch ctermfg=NONE ctermbg=darkred cterm=reverse
@@ -456,5 +457,3 @@ endif
 " Term colors: dark0 dark1 dark2 dark3 dark4 dark5 dark6 dark7
 " Term colors: dark8 dark9 dark10 dark11 dark12 dark13 dark14 dark15
 " vim: et ts=8 sw=2 sts=2
-"
-highlight ModeMsg ctermbg=214 ctermfg=16 guibg=orange guifg=black
